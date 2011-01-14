@@ -3,12 +3,17 @@
   <remote  name="korg"
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
+  <remote  name="github"
+           fetch="git://github.com/ius/" />
   <default revision="gingerbread"
            remote="korg" />
 
   <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="external/alsa-lib" name="android_external_alsa-lib" remote="github" />
+  <project path="external/alsa-utils" name="android_external_alsa-utils" remote="github" />
+  <project path="hardware/alsa_sound" name="android_hardware_alsa_sound" remote="github" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
@@ -22,6 +27,7 @@
   <project path="device/htc/passion-common" name="device/htc/passion-common" />
   <project path="device/sample" name="device/sample" />
   <project path="device/samsung/crespo" name="device/samsung/crespo" />
+  <project path="device/samsung/h1" name="android_device_samsung_h1" remote="github" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
@@ -115,7 +121,7 @@
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
   <project path="hardware/ril" name="platform/hardware/ril" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
+  <project path="hardware/ti/omap3" name="android_hardware_ti_omap3" remote="github" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
