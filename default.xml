@@ -14,6 +14,7 @@
   <project path="external/alsa-lib" name="android_external_alsa-lib" remote="github" />
   <project path="external/alsa-utils" name="android_external_alsa-utils" remote="github" />
   <project path="hardware/alsa_sound" name="android_hardware_alsa_sound" remote="github" />
+  <project path="external/libmsm-h1" name="samsung_h1_libmsm" remote="github" revision="master" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
